@@ -1,0 +1,239 @@
+/* подключение шрифтов */
+/* montserrat-regular - latin */
+*{
+margin: 0;
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* Подключение автосайза */
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #181818;
+
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+/* Стили хедера начало */
+
+.header{
+    
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header_wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding-top: 57px;
+
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.header_item{
+    margin-right: 70px;
+    
+}
+
+nav {
+    
+    margin: 0 auto;
+    padding-top: 20px;
+}
+nav ul {
+    display: table;
+    margin: 0 auto;
+}
+nav li {
+    float:left;
+}
+
+.header_item:last-child{
+margin-right: 0;
+font-size: 16px;
+text-align: right;
+
+}
+
+.header_link{
+    font-size: 14px;
+line-height: 21px;
+color: #181818;
+text-decoration: none;
+}
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: .75;
+}
+
+.header_call{
+    display: flex;
+    flex-direction: column;
+    width: 191px;
+    height: 41.97px;
+    left: 1419px;
+    top: 57.03px;
+    align-items:flex-end;
+
+}
+.header_call_number{
+    font-weight: bold;
+    color: #1F1F1F;
+    text-decoration: none;
+}
+.header_link_last{
+    font-size: 12px;
+    line-height: 21px;
+    color: #1F1F1F;
+    text-decoration:1px underline dashed;
+    
+
+
+}
+
+/* Стили хедера конец */
+
+/* Стил интро начало */
+.intro{
+    min-height:993px ;
+    background: url(../img/intro_bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 216px;
+}
+
+.intro_title{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 110.4%;
+    color: #2F2F2F;
+    max-width: 434px;
+    margin-bottom: 16px;
+}
+.intro_subtitle{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 149.4%;
+    max-width: 493px;
+    max-height: 81px;
+    color: #2F2F2F;
+    margin-bottom: 35px;
+}
+.icon__location{
+    width: 13px;
+height: 20px;
+left: 354px;
+top: 217px;
+
+}
+.location{
+    width: 114px;
+height: 27px;
+left: 354px;
+top: 214px;
+font-weight: 400;
+font-size: 22px;
+line-height: 121.9%;
+text-decoration: none;
+color: #2F2F2F;
+}
+.go__toMenu{
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+}
+.btn__menu{
+display: block;
+background: #EE7700;
+box-shadow: 0px 0px 16px rgba(255, 119, 20, 0.44);
+border-radius: 0px 24px 24px 24px;
+display:block;
+text-align: center;
+width: 213px;
+height: 46px;
+left: 354px;
+top: 499px;
+}
+.link__menu{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 121.9%;
+color: #FFFFFF;
+width: 101px;
+height: 20px;
+text-decoration: dashed;
+margin-top: 13px;
+}
+.menu__carousel{
+    
+    
+}
+
+/* .go_toMenu
+{
+padding: 13px 56px;
+
+font-weight: 600;
+font-size: 16px;
+color: #FFFFFF;
+background: #EE7700;
+box-shadow: 0px 0px 16px rgba(255, 119, 20, 0.44);
+border-radius: 0px 24px 24px 24px;
+border:0;
+}
+.go_toMenu:hover, .go_toMenu:focus, .go_toMenu:active{
+    background: #ff7f00;
+} */
+
+/* Стили интро конец */
+
+
+/*Слайдер */
+
